@@ -6,9 +6,9 @@ import { ShoppinCart } from "./classes/shopping-cart";
 import { NoDiscount, TenPercentDiscount } from "./classes/discount";
 
 // const fiftyPercentDiscount = new FiftyPercentDiscount();
-// const tenPercentDiscount = new TenPercentDiscount();
-const noDiscount = new NoDiscount();
-const shoppinCart = new ShoppinCart(noDiscount);
+const tenPercentDiscount = new TenPercentDiscount();
+// const noDiscount = new NoDiscount();
+const shoppinCart = new ShoppinCart(tenPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
 const order = new Order(shoppinCart, messaging, persistency);
